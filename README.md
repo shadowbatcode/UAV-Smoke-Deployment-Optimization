@@ -1,32 +1,64 @@
 # UAV Smoke Deployment Optimization
 
-来源：
-- `国赛/A题`
-- `国赛/CUMCM_A_problem_2`
-- `国赛/CUMCM_A_problem_4`
+该项目研究无人机烟幕投放过程中的几何建模与策略优化问题，核心任务是通过参数搜索与部署设计，提高遮蔽效果并延长有效遮蔽时间。
 
-项目内容：
+## Project Goals
+
+- 建立投放场景的几何关系模型
+- 优化无人机投放位置与策略参数
+- 分析不同问题阶段下的收敛行为与方案效果
+- 生成题目附件与结果文件，用于论文写作和结果展示
+
+## Methods
+
+- 几何建模
+- 遮蔽时间计算
+- 差分进化与局部优化
+- 并行计算
+- 热力图与收敛曲线分析
+- Python 与 MATLAB 混合求解
+
+## Repository Structure
+
 - `代码/`
-  Python 求解脚本与输出目录
+  Python 主求解脚本与结果目录
 - `原数据/`
-  题目原始数据
+  原始输入数据
 - `附件/`
   结果附件
 - `matlab/problem_2/`
-  第二问相关 MATLAB 脚本
+  第二问 MATLAB 脚本
 - `matlab/problem_4/`
-  第四问相关 MATLAB 脚本与说明
+  第四问 MATLAB 脚本与说明
 
-主题聚焦：
-- 几何建模
-- 无人机烟幕投放与遮蔽优化
-- 参数搜索与收敛分析
-- Python 与 MATLAB 混合求解
+## Key Scripts
 
-主要依赖：
+- `代码/第一问.py`
+  第一问几何求解
+- `代码/第二问.py`
+  第二问优化分析
+- `代码/第三问.py`
+  第三问主优化程序
+- `代码/第三问几何.py`
+  第三问几何版本求解
+- `代码/第四问.py`
+  第四问部署优化
+- `代码/第五问.py`
+  第五问扩展分析
+- `代码/第四问附件生成.py`
+  结果附件生成
+- `代码/第五问附件生成.py`
+  结果附件生成
+
+## Data And Outputs
+
+项目保留了原始数据、生成结果、热力图、收敛曲线、论文图与附件表格，适合直接用于复现实验过程和展示最终方案。
+
+## Running
+
+Python 部分可直接按问题脚本逐个运行；MATLAB 部分可单独执行 `matlab/` 目录下的 `.m` 文件。
+
+## Main Dependencies
+
 - Python：`numpy`、`pandas`、`matplotlib`、`scipy`、`seaborn`、`joblib`
-- MATLAB：用于 `.m` 脚本
-
-备注：
-- MATLAB 自动保存文件 `simulate_A_4.asv` 已在整理时移除
-- 其余图像、结果和附件保留，便于直接展示项目完成度
+- MATLAB：运行 `.m` 脚本所需环境
