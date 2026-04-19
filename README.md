@@ -1,6 +1,7 @@
 # UAV Smoke Deployment Optimization
 
 该项目研究无人机烟幕投放过程中的几何建模与策略优化问题，核心任务是通过参数搜索与部署设计，提高遮蔽效果并延长有效遮蔽时间。
+<center><img width="575" height="339" alt="image" src="https://github.com/user-attachments/assets/f319edfe-0a5b-4c63-a4e8-b00a7b9b347d" /></center>
 
 ## Project Goals
 
